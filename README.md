@@ -4,4 +4,4 @@ Here are my answers to some [technical interview questions](https://en.wikipedia
 
 Most of my answers are boring, but there are some exceptions. One example is [my answer](https://github.com/numdar335/interview_questions/blob/main/Facebook/leetcode_0054.py) to the ["Spiral Matrix" question](https://leetcode.com/problems/spiral-matrix/), which <sub>(as of November 18, 2020)</sub> is faster <sub>(judging by program runtime, not necessarily by algorithmic efficiency)</sub> than 98.41% of all Python3 answers <sub>(to that question)</sub> that have ever been submitted to LeetCode!  There are other examples too :D
 
-Uhh also keep in mind that most of my code here is **far** from optimal in terms of formatting and tweaking, and I feel really insecure about it but then again I can't make adjustments to all of it, it is a looot of code afterall.
+Uhh also keep in mind that most of my code here is **far** from optimal in terms of formatting and tweaking, and I feel really insecure about it but then again I don't really want to fix it, it is a looot of code afterall.
