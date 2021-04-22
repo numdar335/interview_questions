@@ -1,4 +1,4 @@
-#task description: https://leetcode.com/problems/spiral-matrix/
+# task description: https://leetcode.com/problems/spiral-matrix/
 class Solution:
   def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
     n, k, i, j, l, u, Arr, x, y = 0, 0, 1, 1, False, False, [], len(matrix), len(matrix[0])
