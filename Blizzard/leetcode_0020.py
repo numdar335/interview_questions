@@ -2,11 +2,11 @@
 class Solution(object):
   def isValid(self,s):
     helper = []
-    for i in s:
-      if i in ['(','{','[']: helper.append(i)
+    for x in s:
+      if x in ['(','{','[']: helper.append(x)
       elif helper:
-        temp = helper.pop()
-        if (temp != '(' and i == ')') or (temp != '{' and i == '}') or (temp != '[' and i == ']'): return False
+        var = helper.pop()
+        if (var != '(' and x == ')') or (var != '{' and x == '}') or (var != '[' and x == ']'): return False
       else: return False
     if not helper: return True
     return False
