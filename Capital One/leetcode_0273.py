@@ -1,10 +1,7 @@
-#task description: https://leetcode.com/problems/integer-to-english-words/
+# task description: https://leetcode.com/problems/integer-to-english-words/
 class Solution(object):
   def helper(self,a,b,c):
-    s = ''
-    flag = [False,False]
-    a, b, c = int(a), int(b), int(c)
-    Arr = [['One','Two','Three','Four','Five','Six','Seven','Eight','Nine'],['Eleven','Twelve','Thirteen','Fourteen','Fifteen','Sixteen','Seventeen','Eighteen','Nineteen'],['Ten','Twenty','Thirty','Forty','Fifty','Sixty','Seventy','Eighty','Ninety']]
+    s, flag, a, b, c, Arr = '', [False,False], int(a), int(b), int(c), [['One','Two','Three','Four','Five','Six','Seven','Eight','Nine'],['Eleven','Twelve','Thirteen','Fourteen','Fifteen','Sixteen','Seventeen','Eighteen','Nineteen'],['Ten','Twenty','Thirty','Forty','Fifty','Sixty','Seventy','Eighty','Ninety']]
     if a:
       s += Arr[0][a-1]+' Hundred'
       flag[0] = True
@@ -23,12 +20,9 @@ class Solution(object):
     return s
   def numberToWords(self,num):
     if not num: return 'Zero'
-    outp = ''
-    flag = [False,False,False]
-    Arr = ['One','Two']
-    s = str(num)
+    outp, flag, Arr, s = '', [False,False,False], ['One','Two'], str(num)
     n = len(s)
-    for i in range(0,10-n): s = '0'+s
+    for i in range(10-n): s = '0'+s
     if s[0] != '0':
       outp += Arr[int(s[0])-1]+' Billion'
       flag[0] = True
