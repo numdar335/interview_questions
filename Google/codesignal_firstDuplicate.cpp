@@ -1,4 +1,4 @@
-//task description: https://app.codesignal.com/interview-practice/task/pMvymcahZ8dY4g75q/description
+// task description: https://app.codesignal.com/interview-practice/task/pMvymcahZ8dY4g75q/description
 int firstDuplicate(vector<int> A) {
   vector<int> B(99999);
   fill(B.begin(),B.end(),0);
