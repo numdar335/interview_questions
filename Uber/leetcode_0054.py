@@ -1,14 +1,11 @@
-#task description: https://leetcode.com/problems/spiral-matrix/
+# task description: https://leetcode.com/problems/spiral-matrix/
 class Solution:
   def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
-    n, k, i, j = 0, 0, 1, 1
-    x, y = len(matrix), len(matrix[0])
+    n, k, i, j, l, u, Arr, x, y = 0, 0, 1, 1, False, False, [], len(matrix), len(matrix[0])
+    Arr.append(matrix[0][0])
     if y > 1: r, d = True, False
     else: r, d = False, True
-    l, u = False, False
-    A = []
-    A.append(matrix[0][0])
-    for k in range (1,x*y):
+    for k in range(1,x*y):
       if r:
         j += 1
         if j == y-n: r, d = False, True
@@ -24,5 +21,5 @@ class Solution:
           n += 1
         i -= 1
         if i == 1+n: u, r = False, True
-      A.append(matrix[i-1][j-1])
-    return A
+      Arr.append(matrix[i-1][j-1])
+    return Arr
