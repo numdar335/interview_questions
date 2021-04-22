@@ -1,6 +1,6 @@
 # task description: https://leetcode.com/problems/spiral-matrix/
 class Solution:
-  def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
+  def spiralOrder(self,matrix: List[List[int]]) -> List[int]:
     n, k, i, j, l, u, Arr, x, y = 0, 0, 1, 1, False, False, [], len(matrix), len(matrix[0])
     Arr.append(matrix[0][0])
     if y > 1: r, d = True, False
