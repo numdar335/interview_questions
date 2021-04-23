@@ -1,5 +1,5 @@
 // task description: https://app.codesignal.com/interview-practice/task/yM4uWYeQTHzYewW9H/description
-bool isCryptSolution(vector<string> crypt, vector<vector<char>> solution) {
+bool isCryptSolution(vector<string> crypt,vector<vector<char>> solution) {
   short A[3], m, c, n = solution.size();
   for (short i = 1; i <= 3; ++i) {
     A[i-1] = 0;
